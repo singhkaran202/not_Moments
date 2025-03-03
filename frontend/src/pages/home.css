@@ -1,0 +1,49 @@
+.videoTag{
+    width: 100%;
+    height: 70vh;
+    /* position: relative; */
+    object-fit: cover;
+}
+
+@media only screen and (min-width:200px) and (max-width: 784px) {
+    .videoTag{
+        width: 110%;
+        height: 35vh;
+        /* position: relative; */
+        object-fit: cover;
+    }
+}
+
+/* .background-video {
+    position: relative;
+    width: 107%;
+    height: 75vh; 
+    overflow: hidden;
+  }
+  
+  .background-video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1;
+    height: -webkit-fill-available;
+  }
+  
+  @media only screen and (min-width:200px) and (max-width: 784px) {
+    
+    .background-video video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 40%;
+        object-fit: cover;
+      }
+} */
