@@ -13,6 +13,10 @@ import {
   useColorMode
   
 } from '@chakra-ui/react';
+
+import {Link as RouterLink} from "react-router-dom";
+
+
 import {FaYoutube, FaInstagram, FaFacebook, FaLinkedin } from 'react-icons/fa';
 //import logo from '../assets/svgs/logo.svg';
 //import whitelogo from '../assets/svgs/logo-w.svg'
@@ -57,7 +61,7 @@ const SocialButton = ({
 };
 
 export default function Footer() {
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { colorMode, toggleColorMode } = useColorMode();  
   return (
     <Box
       bg={useColorModeValue('white', 'gray.900')}
@@ -66,11 +70,21 @@ export default function Footer() {
         <SimpleGrid columns={{ base: 1, sm: 4, md: 3 }} spacing={50}>
           <Stack align={'flex-start'}>
             <ListHeader><strong>PAGES</strong></ListHeader>
-            <Link href={'/home'}>Home</Link>
+            {/* <Link href={'/home'}>Home</Link> */}
             {/* <Link href={'/about'}>About</Link> */}
-            <Link href={'/workshop'}>Workshops</Link>
+            {/* <Link href={'/workshop'}>Workshops</Link>
             <Link href={'/events'}>Events</Link>
-            <Link href={'/guestlectures'}>Guest Lectures</Link>
+            <Link href={'/guestlectures'}>Guest Lectures</Link> */}
+
+
+            <Link as={RouterLink} to={'/home'}>Home</Link>
+            <Link as={RouterLink} to={'/workshop'}>Workshops</Link>
+            <Link as={RouterLink} to={'/events'}>Events</Link>
+            <Link as={RouterLink} to={'/guestlectures'}>Guest Lectures</Link>
+
+
+
+
             {/* <Link href={'/ca'}>Campus Ambassador</Link> */}
           </Stack>
 
