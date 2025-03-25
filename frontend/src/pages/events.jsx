@@ -1,24 +1,29 @@
 import React from 'react';
+// import {
+//   Box,
+//   Flex,
+//   SimpleGrid,
+//   Stack,
+//   Badge,
+//   Button,
+//   Text,
+//   useColorModeValue,
+//   Center,
+//   useDisclosure,
+//   Modal,
+//   ModalOverlay,
+//   ModalContent,
+//   ModalHeader,
+//   ModalCloseButton,
+//   ModalBody,
+//   UnorderedList,
+//   ListItem,
+//   Image,
+// } from '@chakra-ui/react';
 import {
   Box,
   Flex,
-  SimpleGrid,
-  Stack,
-  Badge,
-  Button,
-  Text,
-  useColorModeValue,
-  Center,
-  useDisclosure,
-  Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalHeader,
-  ModalCloseButton,
-  ModalBody,
-  UnorderedList,
-  ListItem,
-  Image,
+  Center
 } from '@chakra-ui/react';
 
 import banner from '../assets/images/banner.png';

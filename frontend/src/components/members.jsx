@@ -13,7 +13,7 @@ function importAll(r) {
 const images = importAll(require.context('../data/member-photos', false, /\.(png|jpe?g|svg|JPE?G|jfif|jpg)$/));
 
 const memberbig= MEMBERDATA.slice(0,3)
-const membersmall= MEMBERDATA.slice(4,MEMBERDATA.length)
+// const membersmall= MEMBERDATA.slice(4,MEMBERDATA.length)
 
 const Feature = ({ title, text, icon }) => {
  

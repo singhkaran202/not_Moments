@@ -3,15 +3,13 @@ import {
   Container,
   Text,
   Stack,
-  HStack,
   Center,
-  Flex,
-  Button,
   useColorModeValue,
   Image,
 } from '@chakra-ui/react';
 import ring from '../assets/svgs/Vector.svg';
-import circle from '../assets/svgs/Vector-1.svg';
+// import circle from '../assets/svgs/Vector-1.svg';
+
 // Replace test data with your own
 // const features = Array.apply(null, Array(2)).map(function (x, i) {
 //   return {

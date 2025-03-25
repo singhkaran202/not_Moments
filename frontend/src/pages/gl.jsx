@@ -3,32 +3,40 @@ import {
   Box,
   Flex,
   SimpleGrid,
-  Badge,
-  Button,
-  Text,
-  useColorModeValue,
-  Center,
-  useDisclosure,
-  Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalHeader,
-  ModalCloseButton,
-  ModalBody,
-  ModalFooter,
-  UnorderedList,
-  ListItem,
-  Image,
+  Center
 } from '@chakra-ui/react';
+
+
+// import {
+//   Box,
+//   Flex,
+//   SimpleGrid,
+//   Badge,
+//   Button,
+//   Text,
+//   useColorModeValue,
+//   Center,
+//   useDisclosure,
+//   Modal,
+//   ModalOverlay,
+//   ModalContent,
+//   ModalHeader,
+//   ModalCloseButton,
+//   ModalBody,
+//   ModalFooter,
+//   UnorderedList,
+//   ListItem,
+//   Image,
+// } from '@chakra-ui/react';
 
 import banner from '../assets/images/banner.png';
 import Navbar from '../components/nav';
 import Footer from '../components/footer';
 import ComingSoonGL from '../components/gl-comingsoon'
 
-const gl1 = [
-  "Moments '23 is all set to bring you some of the best guest lectures across the globe. To kick off this year's Moments, we have Professor Peter Collin from Luleå University of Technology all the way from Sweden to deliver an exemplary lecture on 'Efficient bridge construction'. Join us live on 23rd January at 1:30 pm."
-];
+// const gl1 = [
+//   "Moments '23 is all set to bring you some of the best guest lectures across the globe. To kick off this year's Moments, we have Professor Peter Collin from Luleå University of Technology all the way from Sweden to deliver an exemplary lecture on 'Efficient bridge construction'. Join us live on 23rd January at 1:30 pm."
+// ];
 
 function Guestlecture() {
   return (
