@@ -2,25 +2,33 @@ import React from 'react';
 import {
   Box,
   Flex,
-  SimpleGrid,
-  Stack,
-  Badge,
-  Button,
-  Text,
-  useColorModeValue,
-  Center,
-  useDisclosure,
-  Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalHeader,
-  ModalCloseButton,
-  ModalBody,
-  ModalFooter,
-  UnorderedList,
-  ListItem,
-  Image,
+  Center
 } from '@chakra-ui/react';
+
+
+
+// import {
+//   Box,
+//   Flex,
+//   SimpleGrid,
+//   Stack,
+//   Badge,
+//   Button,
+//   Text,
+//   useColorModeValue,
+//   Center,
+//   useDisclosure,
+//   Modal,
+//   ModalOverlay,
+//   ModalContent,
+//   ModalHeader,
+//   ModalCloseButton,
+//   ModalBody,
+//   ModalFooter,
+//   UnorderedList,
+//   ListItem,
+//   Image,
+// } from '@chakra-ui/react';
 
 
 import banner from '../assets/images/banner.png';
@@ -30,36 +38,23 @@ import Footer from '../components/footer';
 // import SAP2000 from '../assets/images/Workshop_Images_2024/SAP2000.jpeg'
 import Comingsoon from '../components/comingsoon';
 
-const workshop1 = [
-  'Worried about industry skills to add in your resume? MOMENTS’24 Workshops got you covered!!! This is your chance to impress potential employers, boost your project speed, and become an indispensable asset in the field.',
-  'Imagine revolutionising your civil engineering workflow with the power of Tekla at your fingertips! This exclusive workshop is not just about learning industry-leading BIM software - it is about taking your skills to the next level and gaining a serious edge in the job market.',
-  'Experienced instructors will guide you through creating 3D models, collaborating seamlessly on projects, and automating tasks for ultimate efficiency. Do not miss this opportunity to unlock your full potential as a civil engineer. ',
-  'Date & Time : 31th March 9:00 AM to 12:00 PM',
-  'Venue: Third Eye',
-  'Taken By: Mr. Ganesh S Sundaram (Project Engineer Esskay Structures)',
-  'Registration Fee: ₹250',
-  'Limited seats available, Register now! ',
-];
+// const workshop1 = [
+//   'Worried about industry skills to add in your resume? MOMENTS’24 Workshops got you covered!!! This is your chance to impress potential employers, boost your project speed, and become an indispensable asset in the field.',
+//   'Imagine revolutionising your civil engineering workflow with the power of Tekla at your fingertips! This exclusive workshop is not just about learning industry-leading BIM software - it is about taking your skills to the next level and gaining a serious edge in the job market.',
+//   'Experienced instructors will guide you through creating 3D models, collaborating seamlessly on projects, and automating tasks for ultimate efficiency. Do not miss this opportunity to unlock your full potential as a civil engineer. ',
+//   'Date & Time : 31th March 9:00 AM to 12:00 PM',
+//   'Venue: Third Eye',
+//   'Taken By: Mr. Ganesh S Sundaram (Project Engineer Esskay Structures)',
+//   'Registration Fee: ₹250',
+//   'Limited seats available, Register now! ',
+// ];
 
-const workshop2 = [
-  
-  'Dive into the realm of structural engineering with SAP2000 workshop on March 29, from 2:30 PM to 5:30 PM, conducted by esteemed Assistant Professor Dr. Mashuda Sultana at Third Eye🏗️',
-  'Explore SAP2000 foundational principles and advanced applications through hands-on sessions, tackling real-world challenges under expert guidance.💡',
-  'Whether you are a seasoned practitioner or an aspiring engineer, this transformative workshop will propel your proficiency in structural analysis and design to new heights. 🚀',
-  'Secure your spot now and unlock your potential in shaping the future of structural engineering! 🌟',
-  'Date & Time : 29th March 2:30 PM to 5:30 PM',
-  'Taken By: Dr. Mashudha Sultana (Assistant Professor, NIT Trichy)',
-  'Venue: Third Eye',
-  'Registration Fee: ₹250',
-  'Limited seats available, Register now! ',
-];
-
-const workshop3 = [
-  'Bridges constitute a significant portion of the national economy of a country and serve as a foundation for infrastructure development. As a civil engineer, it is essential to know about the basics of bridge engineering and technology. MOMENTS ’23 presents a workshop session on ‘Overview Of Bridge Engineering and Technology’, where budding engineers will gain deep understanding of modern bridge technology.',
-  'Registration fee: ₹200',
-  'Date & Time : 3rd Feb 2 PM to 4:30 PM',
-  'Check out the workshop description for more information.',
-];
+// const workshop3 = [
+//   'Bridges constitute a significant portion of the national economy of a country and serve as a foundation for infrastructure development. As a civil engineer, it is essential to know about the basics of bridge engineering and technology. MOMENTS ’23 presents a workshop session on ‘Overview Of Bridge Engineering and Technology’, where budding engineers will gain deep understanding of modern bridge technology.',
+//   'Registration fee: ₹200',
+//   'Date & Time : 3rd Feb 2 PM to 4:30 PM',
+//   'Check out the workshop description for more information.',
+// ];
 
 // const workshop4 = [
 //   'To thrive as a pro in designing multi-storey buildings is still an aspiration for many. Fret Not! Moments 22 is here to present a workshop on ETABS, which is the ultimate software package for structural analysis. Udhaya Sankar Ramasamy would provide detailed mentoring all the way through.',
@@ -210,94 +205,94 @@ function Workshop() {
   );
 }
 
-function WorkshopCard({ title, description, rules, tag, url, registerLink }) {
-  const { isOpen, onOpen, onClose } = useDisclosure();
-  return (
-    <Box
-      maxW="sm"
-      borderWidth="2px"
-      borderRadius="lg"
-      overflow="hidden"
-      p={15}
-      pb={20}
-      position="relative"
-    >
-      <Badge borderRadius="full" px="5" py="1">
-        {tag}
-      </Badge>
+// function WorkshopCard({ title, description, rules, tag, url, registerLink }) {
+//   const { isOpen, onOpen, onClose } = useDisclosure();
+//   return (
+//     <Box
+//       maxW="sm"
+//       borderWidth="2px"
+//       borderRadius="lg"
+//       overflow="hidden"
+//       p={15}
+//       pb={20}
+//       position="relative"
+//     >
+//       <Badge borderRadius="full" px="5" py="1">
+//         {tag}
+//       </Badge>
 
-      <Text as="h3" my={5} fontWeight="bold" fontSize="2xl">
-        {title}
-      </Text>
-      <Text>
-        {description === ''
-          ? 'Sit nulla est ex deserunt exercitation anim occaecat. Nostrud ullamco deserunt aute id consequat veniam duaisdhusia dusa duashu duasdhusahd saudusahud ausdhuisahdui ddcdsfd'
-          : description}
-      </Text>
-      <Center>
-        <Button
-          mt={25}
-          size="md"
-          height="40px"
-          width="120px"
-          border="1px"
-          borderColor="#C0C1D1"
-          borderRadius={4}
-          zIndex={1}
-          _hover={{
-            textDecoration: 'none',
-            bg: useColorModeValue('accent', 'accent'),
-            color: 'white',
-          }}
-          onClick={onOpen}
-          style={{ position: 'absolute', bottom: '20px' }}
-        >
-          View more
-        </Button>
-      </Center>
+//       <Text as="h3" my={5} fontWeight="bold" fontSize="2xl">
+//         {title}
+//       </Text>
+//       <Text>
+//         {description === ''
+//           ? 'Sit nulla est ex deserunt exercitation anim occaecat. Nostrud ullamco deserunt aute id consequat veniam duaisdhusia dusa duashu duasdhusahd saudusahud ausdhuisahdui ddcdsfd'
+//           : description}
+//       </Text>
+//       <Center>
+//         <Button
+//           mt={25}
+//           size="md"
+//           height="40px"
+//           width="120px"
+//           border="1px"
+//           borderColor="#C0C1D1"
+//           borderRadius={4}
+//           zIndex={1}
+//           _hover={{
+//             textDecoration: 'none',
+//             bg: useColorModeValue('accent', 'accent'),
+//             color: 'white',
+//           }}
+//           onClick={onOpen}
+//           style={{ position: 'absolute', bottom: '20px' }}
+//         >
+//           View more
+//         </Button>
+//       </Center>
 
-      <Modal
-        scrollBehavior="inside"
-        isOpen={isOpen}
-        onClose={onClose}
-        isCentered
-        motionPreset="slideInBottom"
-        size="xl"
-      >
-        <ModalOverlay />
-        <ModalContent>
-          <ModalHeader>{title}</ModalHeader>
-          <ModalCloseButton />
-          <ModalBody>
-            <Center>
-              <Image height="400" src={url} alt={title} />
-            </Center>
+//       <Modal
+//         scrollBehavior="inside"
+//         isOpen={isOpen}
+//         onClose={onClose}
+//         isCentered
+//         motionPreset="slideInBottom"
+//         size="xl"
+//       >
+//         <ModalOverlay />
+//         <ModalContent>
+//           <ModalHeader>{title}</ModalHeader>
+//           <ModalCloseButton />
+//           <ModalBody>
+//             <Center>
+//               <Image height="400" src={url} alt={title} />
+//             </Center>
 
-            <UnorderedList>
-              {rules.map((s, i) => {
-                return <ListItem key={i}>{s}</ListItem>;
-              })}
-            </UnorderedList>
-          </ModalBody>
+//             <UnorderedList>
+//               {rules.map((s, i) => {
+//                 return <ListItem key={i}>{s}</ListItem>;
+//               })}
+//             </UnorderedList>
+//           </ModalBody>
 
-          {/* <ModalFooter> */}
-          <Center>
-            <Button
-              colorScheme="blue"
-              m={3}
-              onClick={() => {
-                window.location.assign(registerLink);
-              }}
-            >
-              Register Now
-            </Button>
-          </Center>
+//           {/* <ModalFooter> */}
+//           <Center>
+//             <Button
+//               colorScheme="blue"
+//               m={3}
+//               onClick={() => {
+//                 window.location.assign(registerLink);
+//               }}
+//             >
+//               Register Now
+//             </Button>
+//           </Center>
 
-          {/* </ModalFooter> */}
-        </ModalContent>
-      </Modal>
-    </Box>
-  );
-}
+//           {/* </ModalFooter> */}
+//         </ModalContent>
+//       </Modal>
+//     </Box>
+//   );
+// }
 
 export default Workshop;
