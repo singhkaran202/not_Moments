@@ -1,44 +1,48 @@
 import React from 'react';
-import {
-  Box,
-  Flex,
-  Center
-} from '@chakra-ui/react';
-
-
-
 // import {
 //   Box,
 //   Flex,
-//   SimpleGrid,
-//   Stack,
-//   Badge,
-//   Button,
-//   Text,
-//   useColorModeValue,
-//   Center,
-//   useDisclosure,
-//   Modal,
-//   ModalOverlay,
-//   ModalContent,
-//   ModalHeader,
-//   ModalCloseButton,
-//   ModalBody,
-//   ModalFooter,
-//   UnorderedList,
-//   ListItem,
-//   Image,
+//   Center
 // } from '@chakra-ui/react';
+
+
+
+import {
+  Box,
+  Flex,
+  SimpleGrid,
+  Stack,
+  Badge,
+  Button,
+  Text,
+  useColorModeValue,
+  Center,
+  useDisclosure,
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalCloseButton,
+  ModalBody,
+  ModalFooter,
+  UnorderedList,
+  ListItem,
+  Image,
+} from '@chakra-ui/react';
 
 
 import banner from '../assets/images/banner.png';
 import Navbar from '../components/nav';
 import Footer from '../components/footer';
-// import Tekla from '../assets/images/Workshop_Images_2024/Tekla_software.jpeg'
-// import SAP2000 from '../assets/images/Workshop_Images_2024/SAP2000.jpeg'
-import Comingsoon from '../components/comingsoon';
+import PrimeVera from '../assets/images/Workshops/PrimeVera.jpg'
+import Drones from '../assets/images/Workshops/Drones.jpg'
+import Etabs from '../assets/images/Workshops/Etabs.jpg'
+// import Comingsoon from '../components/comingsoon';
 
-// const workshop1 = [
+const workshop1 = [
+  
+];
+// const workshop2 = [
 //   'Worried about industry skills to add in your resume? MOMENTS’24 Workshops got you covered!!! This is your chance to impress potential employers, boost your project speed, and become an indispensable asset in the field.',
 //   'Imagine revolutionising your civil engineering workflow with the power of Tekla at your fingertips! This exclusive workshop is not just about learning industry-leading BIM software - it is about taking your skills to the next level and gaining a serious edge in the job market.',
 //   'Experienced instructors will guide you through creating 3D models, collaborating seamlessly on projects, and automating tasks for ultimate efficiency. Do not miss this opportunity to unlock your full potential as a civil engineer. ',
@@ -48,19 +52,16 @@ import Comingsoon from '../components/comingsoon';
 //   'Registration Fee: ₹250',
 //   'Limited seats available, Register now! ',
 // ];
+const workshop2 = [
+  
+];
+const workshop3 = [
+  
+];
 
-// const workshop3 = [
-//   'Bridges constitute a significant portion of the national economy of a country and serve as a foundation for infrastructure development. As a civil engineer, it is essential to know about the basics of bridge engineering and technology. MOMENTS ’23 presents a workshop session on ‘Overview Of Bridge Engineering and Technology’, where budding engineers will gain deep understanding of modern bridge technology.',
-//   'Registration fee: ₹200',
-//   'Date & Time : 3rd Feb 2 PM to 4:30 PM',
-//   'Check out the workshop description for more information.',
-// ];
-
-// const workshop4 = [
-//   'To thrive as a pro in designing multi-storey buildings is still an aspiration for many. Fret Not! Moments 22 is here to present a workshop on ETABS, which is the ultimate software package for structural analysis. Udhaya Sankar Ramasamy would provide detailed mentoring all the way through.',
-//   'Registration fee: ₹250',
-//   'Date & Time : 10th Apr 2 PM to 5 PM',
-// ];
+const workshop4 = [
+  
+];
 
 function Workshop() {
   return (
@@ -77,10 +78,10 @@ function Workshop() {
         backgroundPosition={'center'}
         back
       ></Flex>
+{/* 
 
-
-{/* Description or rulebook thing for workshops */}
-{/* <Center as="section" w="100%">
+Description or rulebook thing for workshops
+<Center as="section" w="100%">
           <Stack
             w="60%"
             rounded="md"
@@ -108,65 +109,57 @@ function Workshop() {
 
 
         
-      <Center>
+      {/* <Center>
         <Comingsoon />
-      </Center>
+      </Center> */}
 
 
 
 
-{/* 
+
       <SimpleGrid
         columns={{ base: 1, md: 2, lg: 4 }}
         spacing={{ base: 10, md: 15 }}
         p={50}
       >
-
-
-      {/* <WorkshopCard
-          title="Hands on workshop on SAP 2000 Software"
-          description="Dive into the realm of structural engineering with SAP2000 workshop on March 29, from 2:30 PM to 5:30 PM, conducted by esteemed Assistant Professor Dr. Mashuda Sultana at Third Eye🏗️"
-          tag="29th March 2:30 PM to 5:30 PM"
-          rules={workshop2}
-          url={SAP2000}
-          registerLink="https://unstop.com/p/hands-on-workshop-of-sap2000-moments-national-institute-of-technology-tiruchirappalli-936177"
-        /> */}
-
-
-        {/* <WorkshopCard
-          title="Hands on workshop on Tekla Software"
-          description="Worried about industry skills to add in your resume?
-          MOMENTS’24 Workshops got you covered!!! This is your chance to impress potential employers, boost your project speed, and become an indispensable asset in the field ."
-          tag="31th March 9:00 AM to 12:00 PM"
-          rules={workshop1}
-          url={Tekla}
-          registerLink="https://unstop.com/p/hands-on-workshop-of-tekla-moments-national-institute-of-technology-tiruchirappalli-936042"
-        /> */}
-
-
-
-
-        {/* <WorkshopCard
-          title="‘Overview Of Bridge Engineering and Technology"
-          description="Bridges constitute a significant portion of the national economy of a country and serve as a foundation for infrastructure development. As a civil engineer, it is essential to know about the basics of bridge engineering and technology. MOMENTS ’23 presents a workshop session on ‘Overview Of Bridge Engineering and Technology’, where budding engineers will gain deep understanding of modern bridge technology."
-          tag="3rd Feb 2 PM to 4:30 PM"
+        <WorkshopCard
+          title="Introduction to ETABS"
+          description="Learn the fundamentals of structural analysis and design using ETABS at InfraInnovate. Get hands-on experience in modelling, analysis, and real-world applications from industry experts."
+          tag="4th April"
           rules={workshop3}
-          url="https://i.imgur.com/jY9L3hI.png"
-          registerLink="https://forms.gle/cuBUYzh7vkC2B1YFA"
-        /> */}
+          url={Etabs}
+          registerLink="https://unstop.com/workshops-webinars/etabs-workshop-national-institute-of-technology-nit-trichy-1446430?lb=HiMnG0K1"
+        /> 
+
+      <WorkshopCard
+          title="Introduction to Drone in Surveying"
+          description="Discover how dreams are transforming land surveying and mapping at infrainnovate. Learn about aerial data collection, terrain modelling, and real-world applications in civil engineering"
+          tag="5th April"
+          rules={workshop1}
+          url={Drones}
+          registerLink="https://unstop.com/workshops-webinars/drones-in-surveying-workshop-national-institute-of-technology-nit-tiruchirappalli-1446314?lb=HiMnG0K1"
+        />
+
+
+        <WorkshopCard
+          title="Introduction To Primavera P6"
+          description="Learn the essentials of project scheduling and resource management using Primavera P6 at Infrainnovate. Gain hands-on experience in planning and controlling real-time projects."
+          tag="6th April"
+          rules={workshop2}
+          url={PrimeVera}
+          registerLink="https://unstop.com/workshops-webinars/primavera-p6-workshop-national-institute-of-technology-nit-tiruchirappalli-1445683"
+        /> 
 
 
 
 
-        {/* <WorkshopCard
-          title="ETABS workshop"
-          description="To thrive as a pro in designing multi-storey buildings is still an aspiration for many. Fret Not! Moments 22 is here to present a workshop on ETABS, which is the ultimate software package for structural analysis."
-          tag="10th Apr 2 PM to 5 PM"
-          rules={workshop4}
-          url="https://i.imgur.com/bamZh62.png"
-          registerLink="https://forms.gle/CUvxqvwiLxmYb9pN9"
-        /> */}
-      {/* </SimpleGrid> */}
+         
+
+
+
+
+         
+       </SimpleGrid> 
 
 
 
@@ -205,94 +198,94 @@ function Workshop() {
   );
 }
 
-// function WorkshopCard({ title, description, rules, tag, url, registerLink }) {
-//   const { isOpen, onOpen, onClose } = useDisclosure();
-//   return (
-//     <Box
-//       maxW="sm"
-//       borderWidth="2px"
-//       borderRadius="lg"
-//       overflow="hidden"
-//       p={15}
-//       pb={20}
-//       position="relative"
-//     >
-//       <Badge borderRadius="full" px="5" py="1">
-//         {tag}
-//       </Badge>
+function WorkshopCard({ title, description, rules, tag, url, registerLink }) {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  return (
+    <Box
+      maxW="sm"
+      borderWidth="2px"
+      borderRadius="lg"
+      overflow="hidden"
+      p={15}
+      pb={20}
+      position="relative"
+    >
+      <Badge borderRadius="full" px="5" py="1">
+        {tag}
+      </Badge>
 
-//       <Text as="h3" my={5} fontWeight="bold" fontSize="2xl">
-//         {title}
-//       </Text>
-//       <Text>
-//         {description === ''
-//           ? 'Sit nulla est ex deserunt exercitation anim occaecat. Nostrud ullamco deserunt aute id consequat veniam duaisdhusia dusa duashu duasdhusahd saudusahud ausdhuisahdui ddcdsfd'
-//           : description}
-//       </Text>
-//       <Center>
-//         <Button
-//           mt={25}
-//           size="md"
-//           height="40px"
-//           width="120px"
-//           border="1px"
-//           borderColor="#C0C1D1"
-//           borderRadius={4}
-//           zIndex={1}
-//           _hover={{
-//             textDecoration: 'none',
-//             bg: useColorModeValue('accent', 'accent'),
-//             color: 'white',
-//           }}
-//           onClick={onOpen}
-//           style={{ position: 'absolute', bottom: '20px' }}
-//         >
-//           View more
-//         </Button>
-//       </Center>
+      <Text as="h3" my={5} fontWeight="bold" fontSize="2xl">
+        {title}
+      </Text>
+      <Text>
+        {description === ''
+          ? 'Sit nulla est ex deserunt exercitation anim occaecat. Nostrud ullamco deserunt aute id consequat veniam duaisdhusia dusa duashu duasdhusahd saudusahud ausdhuisahdui ddcdsfd'
+          : description}
+      </Text>
+      <Center>
+        <Button
+          mt={25}
+          size="md"
+          height="40px"
+          width="120px"
+          border="1px"
+          borderColor="#C0C1D1"
+          borderRadius={4}
+          zIndex={1}
+          _hover={{
+            textDecoration: 'none',
+            bg: useColorModeValue('accent', 'accent'),
+            color: 'white',
+          }}
+          onClick={onOpen}
+          style={{ position: 'absolute', bottom: '20px' }}
+        >
+          View more
+        </Button>
+      </Center>
 
-//       <Modal
-//         scrollBehavior="inside"
-//         isOpen={isOpen}
-//         onClose={onClose}
-//         isCentered
-//         motionPreset="slideInBottom"
-//         size="xl"
-//       >
-//         <ModalOverlay />
-//         <ModalContent>
-//           <ModalHeader>{title}</ModalHeader>
-//           <ModalCloseButton />
-//           <ModalBody>
-//             <Center>
-//               <Image height="400" src={url} alt={title} />
-//             </Center>
+      <Modal
+        scrollBehavior="inside"
+        isOpen={isOpen}
+        onClose={onClose}
+        isCentered
+        motionPreset="slideInBottom"
+        size="xl"
+      >
+        <ModalOverlay />
+        <ModalContent>
+          <ModalHeader>{title}</ModalHeader>
+          <ModalCloseButton />
+          <ModalBody>
+            <Center>
+              <Image height="400" src={url} alt={title} />
+            </Center>
 
-//             <UnorderedList>
-//               {rules.map((s, i) => {
-//                 return <ListItem key={i}>{s}</ListItem>;
-//               })}
-//             </UnorderedList>
-//           </ModalBody>
+            <UnorderedList>
+              {rules.map((s, i) => {
+                return <ListItem key={i}>{s}</ListItem>;
+              })}
+            </UnorderedList>
+          </ModalBody>
 
-//           {/* <ModalFooter> */}
-//           <Center>
-//             <Button
-//               colorScheme="blue"
-//               m={3}
-//               onClick={() => {
-//                 window.location.assign(registerLink);
-//               }}
-//             >
-//               Register Now
-//             </Button>
-//           </Center>
+          {/* <ModalFooter> */}
+          <Center>
+            <Button
+              colorScheme="blue"
+              m={3}
+              onClick={() => {
+                window.location.assign(registerLink);
+              }}
+            >
+              Register Now
+            </Button>
+          </Center>
 
-//           {/* </ModalFooter> */}
-//         </ModalContent>
-//       </Modal>
-//     </Box>
-//   );
-// }
+          {/* </ModalFooter> */}
+        </ModalContent>
+      </Modal>
+    </Box>
+  );
+}
 
 export default Workshop;
