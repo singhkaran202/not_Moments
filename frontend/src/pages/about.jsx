@@ -25,11 +25,8 @@ function Aboutpage() {
       backgroundBlendMode={'overlay'}
       backgroundSize={'cover'}
       backgroundPosition={'center'}
-      back
-          
+      back   
        >
-
-      
       </Flex>
       <ComingSoon/>
       <Footer/>

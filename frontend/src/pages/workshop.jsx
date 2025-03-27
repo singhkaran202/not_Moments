@@ -1,17 +1,9 @@
 import React from 'react';
-// import {
-//   Box,
-//   Flex,
-//   Center
-// } from '@chakra-ui/react';
-
-
-
 import {
   Box,
   Flex,
   SimpleGrid,
-  Stack,
+  // Stack,
   Badge,
   Button,
   Text,
@@ -24,7 +16,7 @@ import {
   ModalHeader,
   ModalCloseButton,
   ModalBody,
-  ModalFooter,
+  // ModalFooter,
   UnorderedList,
   ListItem,
   Image,
@@ -70,8 +62,8 @@ function Workshop() {
       <Flex
         w={'full'}
         h={'40vh'}
-        // background={banner}
-        // backgroundColor={'rgba(122, 12, 32, 0.66)'}
+        background={banner}
+        // backgroundColor={'rgba(85, 122, 12, 0.66)'}
         backgroundImage={banner}
         backgroundBlendMode={'overlay'}
         backgroundSize={'cover'}
@@ -114,16 +106,13 @@ Description or rulebook thing for workshops
       </Center> */}
 
 
-
-
-
       <SimpleGrid
         columns={{ base: 1, md: 2, lg: 4 }}
         spacing={{ base: 10, md: 15 }}
         p={50}
       >
         <WorkshopCard
-          title="Introduction to ETABS"
+          title="Introduction to ETABS By CSI Delhi"
           description="Learn the fundamentals of structural analysis and design using ETABS at InfraInnovate. Get hands-on experience in modelling, analysis, and real-world applications from industry experts."
           tag="4th April"
           rules={workshop3}
@@ -132,7 +121,7 @@ Description or rulebook thing for workshops
         /> 
 
       <WorkshopCard
-          title="Introduction to Drone in Surveying"
+          title="Introduction to Drone in Surveying By Bhushan Madival & Kousie"
           description="Discover how dreams are transforming land surveying and mapping at infrainnovate. Learn about aerial data collection, terrain modelling, and real-world applications in civil engineering"
           tag="5th April"
           rules={workshop1}
@@ -142,27 +131,14 @@ Description or rulebook thing for workshops
 
 
         <WorkshopCard
-          title="Introduction To Primavera P6"
+          title="Introduction To Primavera P6 By Kaarthik G & Dr. Santhosh Loganathan"
           description="Learn the essentials of project scheduling and resource management using Primavera P6 at Infrainnovate. Gain hands-on experience in planning and controlling real-time projects."
           tag="6th April"
           rules={workshop2}
           url={PrimeVera}
           registerLink="https://unstop.com/workshops-webinars/primavera-p6-workshop-national-institute-of-technology-nit-tiruchirappalli-1445683"
         /> 
-
-
-
-
-         
-
-
-
-
-         
        </SimpleGrid> 
-
-
-
 
       {
         // Code for Site Under construction

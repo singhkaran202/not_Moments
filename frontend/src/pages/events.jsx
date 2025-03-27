@@ -20,11 +20,6 @@ import {
   // ListItem,
   Image,
 } from '@chakra-ui/react';
-// import {
-//   Box,
-//   Flex,
-//   Center
-// } from '@chakra-ui/react';
 
 import banner from '../assets/images/banner.png';
 import Navbar from '../components/nav';
@@ -42,6 +37,7 @@ export default function Events() {
         w={'full'}
         h={'40vh'}
         backgroundImage={banner}
+        // backgroundColor={'rgba(12, 47, 122, 0.66)'}
         backgroundBlendMode={'overlay'}
         backgroundSize={'cover'}
         backgroundPosition={'center'}
@@ -200,28 +196,6 @@ export default function Events() {
 //     </>
 //   );
 // }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 function Event1() {
@@ -690,120 +664,3 @@ function Event4() {
   );
 }
 
-// function Event5() {
-//   const { isOpen, onOpen, onClose } = useDisclosure();
-//   return (
-//     <Box
-//       maxW="sm"
-//       borderWidth="2px"
-//       borderRadius="lg"
-//       overflow="hidden"
-//       p={15}
-//       pb={20}
-//       position="relative"
-//     >
-//       <Badge borderRadius="full" px="5" py="1">
-//         event{' '}
-//       </Badge>
-//       <Text as="h3" my={5} fontWeight="bold" fontSize="2xl" color={'accent'}>
-//         {' '}
-//         PRO MEMER{' '}
-//       </Text>{' '}
-//       <Text>
-//         {' '}
-//         Are you the one cracking jokes with your friends all around ? Is your
-//         library full of memes for every occasion ? We’ ve got you covered! Get
-//         your creative gear started and season it with the most exciting
-//         competition of MOMENTS’ 23, “PRO MEMER” where you can manifest your
-//         sense of humour. Buckle up, it’ s meme time. Top 3 contestants will be
-//         rewarded with free tickets to any one of the workshops.{' '}
-//       </Text>{' '}
-//       <Center>
-//         <Button
-//           mt={25}
-//           size="md"
-//           height="40px"
-//           width="100px"
-//           border="1px"
-//           borderColor="#C0C1D1"
-//           borderRadius={4}
-//           zIndex={1}
-//           _hover={{
-//             textDecoration: 'none',
-//             bg: useColorModeValue('accent', 'accent'),
-//             color: 'white',
-//           }}
-//           onClick={onOpen}
-//           style={{ position: 'absolute', bottom: '20px' }}
-//         >
-//           View more
-//         </Button>
-//       </Center>
-//       <Modal
-//         scrollBehavior="inside"
-//         isOpen={isOpen}
-//         onClose={onClose}
-//         isCentered
-//         motionPreset="slideInBottom"
-//         size="xl"
-//       >
-//         <ModalOverlay />
-//         <ModalContent>
-//           <ModalHeader color={'accent'}> PRO MEMER </ModalHeader>{' '}
-//           <ModalCloseButton />
-//           <ModalBody>
-//             <Center>
-//               {' '}
-//               <a href="https://i.imgur.com/iq07aPh.png" target="_blank">
-//                 {' '}
-//                 <Image
-//                   height="400"
-//                   src="https://i.imgur.com/iq07aPhh.png"
-//                   alt="PROMEMER"
-//                 />{' '}
-//               </a>{' '}
-//             </Center>
-//             <Text as="h3" my={5} fontWeight="bold" fontSize="xl">
-//               {' '}
-//               Event description{' '}
-//             </Text>{' '}
-//             <Text as="p" my={5}>
-//               {' '}
-//               Are you the one cracking jokes with your friends all around ? Is
-//               your library full of memes for every occasion ? We’ ve got you
-//               covered!{' '}
-//             </Text>{' '}
-//             <Text as="p" my={5}>
-//               Get your creative gear started and season it with the most
-//               exciting competition of MOMENTS’ 23, “PRO MEMER” where you can
-//               manifest your sense of humour. Buckle up, it’ s meme time.{' '}
-//             </Text>{' '}
-//             <Text as="p" my={5}>
-//               Top 3 contestants will be rewarded with free tickets to any one of
-//               the workshops.{' '}
-//               <br />
-//               <br />
-//               Go check out the rule book for more information.
-//             </Text>
-            
-//           </ModalBody>
-//           {/* <ModalFooter> */}{' '}
-//           <Center>
-//             <Button
-//               colorScheme="blue"
-//               m={3}
-//               onClick={() => {
-//                 window.location.assign('https://forms.gle/rBGR1D862ipqu4UZ8');
-//               }}
-//             >
-//               Register Now{' '}
-//             </Button>{' '}
-//           </Center>
-//           {/* </ModalFooter> */}{' '}
-//         </ModalContent>{' '}
-//       </Modal>
-//     </Box>
-//   );
-// }
-
-// export default Events;

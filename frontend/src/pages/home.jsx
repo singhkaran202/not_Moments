@@ -1,14 +1,12 @@
 import React from 'react';
+
 import { 
   Box,
-  Flex
+  Flex,
+  // AspectRatio,
+  // Center
 } from '@chakra-ui/react';
-// import { 
-//   Box,
-//   Flex,
-//   AspectRatio,
-//   Center
-// } from '@chakra-ui/react';
+
 import banner from '../assets/images/banner.png'
 import './home.css';
 // import sample from '../assets/videos/1.mp4';

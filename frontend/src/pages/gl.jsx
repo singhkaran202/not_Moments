@@ -1,11 +1,4 @@
 import React from 'react';
-// import {
-//   Box,
-//   Flex,
-//   SimpleGrid,
-//   Center
-// } from '@chakra-ui/react';
-
 
 import {
   Box,
@@ -23,7 +16,7 @@ import {
   ModalHeader,
   ModalCloseButton,
   ModalBody,
-  ModalFooter,
+  // ModalFooter,
   UnorderedList,
   ListItem,
   Image,
@@ -33,7 +26,7 @@ import banner from '../assets/images/banner.png';
 import Navbar from '../components/nav';
 import Footer from '../components/footer';
 import AlTalk from '../assets/images/Guest Lec/AluminTalk.png'
-import ComingSoonGL from '../components/gl-comingsoon'
+// import ComingSoonGL from '../components/gl-comingsoon'
 
 const gl1 = [
 '🌟 Mark your calendars!',
@@ -57,7 +50,7 @@ function Guestlecture() {
       <Flex
         w={'full'}
         h={'40vh'}
-        // background={banner}
+        background={banner}
         // backgroundColor={'rgba(122, 12, 32, 0.66)'}
         backgroundImage={banner}
         backgroundBlendMode={'overlay'}
@@ -78,7 +71,6 @@ function Guestlecture() {
           title="Alumini-Talk (Case Study on Slope Protection at Iron Ore Mines)"
           description="🌟 Mark your calendars!
 Join us on 25th March 2025 at 3 PM for an exclusive Alumni Talk with Sujeet Kumar, Chief - Projects and Construction at Tata Steel! 🏗️✨
-
 Dive into a real-world Case Study on Slope Protection at Iron Ore Mines 🏞️ and gain insights from an industry veteran!
 "
           rules={gl1}
@@ -86,12 +78,7 @@ Dive into a real-world Case Study on Slope Protection at Iron Ore Mines 🏞️ 
           registerLink="https://moments.nitt.edu/"
           tag="Guest Lecture"
         />
-
-        
-        
-        
       </SimpleGrid>
-
       <Footer />
     </Box>
   );
