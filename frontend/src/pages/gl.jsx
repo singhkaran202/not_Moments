@@ -26,6 +26,7 @@ import banner from '../assets/images/banner.png';
 import Navbar from '../components/nav';
 import Footer from '../components/footer';
 import AlTalk from '../assets/images/Guest Lec/AluminTalk.png'
+import AlTalk2 from '../assets/images/Guest Lec/AlTalk2.png'
 // import ComingSoonGL from '../components/gl-comingsoon'
 
 const gl1 = [
@@ -41,6 +42,19 @@ const gl1 = [
 
 'Don’t miss this opportunity to learn from one of the best in the field! 🚀'
 
+];
+const gl2 = [
+  '🌟 Save the Date!',
+
+'Join us for an exclusive Alumni Talk with Rajprabhu Thangappa (Batch 2014) 🎓, Bridge Engineer at RK&K, Raleigh, USA 🌉✨',
+
+'📢 Topic: Ground Motion Selection for Response Verification',
+'📅 Saturday, 29th March 2025',
+'🕖 07:00 PM - 08:00 PM IST',
+'📍 Online (MS Teams)',
+
+'Gain valuable insights from an expert in the field of bridge engineering and earthquake response!',
+'Dont miss this chance to learn from a seasoned professional! 🚀'
 ];
 
 function Guestlecture() {
@@ -75,6 +89,18 @@ Dive into a real-world Case Study on Slope Protection at Iron Ore Mines 🏞️ 
 "
           rules={gl1}
           url={AlTalk}
+          registerLink="https://moments.nitt.edu/"
+          tag="Guest Lecture"
+        />
+        <GLCard
+          title="Alumini-Talk (Ground motion selection for response verification)"
+          description="🌟 Save the Date!
+
+Join us for an exclusive Alumni Talk with Rajprabhu Thangappa (Batch 2014) 🎓, Bridge Engineer at RK&K, Raleigh, USA 🌉✨
+
+"
+          rules={gl2}
+          url={AlTalk2}
           registerLink="https://moments.nitt.edu/"
           tag="Guest Lecture"
         />
