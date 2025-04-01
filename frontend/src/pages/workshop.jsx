@@ -131,7 +131,7 @@ Description or rulebook thing for workshops
 
 
         <WorkshopCard
-          title="Introduction To Primavera P6 By Kaarthik G & Dr. Santhosh Loganathan"
+          title="Introduction To Primavera P6 By Mr. Karthik G & Dr. Santhosh Loganathan"
           description="Learn the essentials of project scheduling and resource management using Primavera P6 at Infrainnovate. Gain hands-on experience in planning and controlling real-time projects."
           tag="6th April"
           rules={workshop2}
