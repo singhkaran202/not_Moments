@@ -27,7 +27,9 @@ import Navbar from '../components/nav';
 import Footer from '../components/footer';
 import AlTalk from '../assets/images/Guest Lec/AluminTalk.png'
 import AlTalk2 from '../assets/images/Guest Lec/AlTalk2.png'
-// import ComingSoonGL from '../components/gl-comingsoon'
+import MrUdayaKumar from '../assets/images/Guest Lec/MrUdayaKumar.jpg'
+import Rajayogan from '../assets/images/Guest Lec/Rajayogan.jpg'
+// import ComingSoonGL from '../components/gl-comingsoon' 
 
 const gl1 = [
 '🌟 Mark your calendars!',
@@ -56,6 +58,13 @@ const gl2 = [
 'Gain valuable insights from an expert in the field of bridge engineering and earthquake response!',
 'Dont miss this chance to learn from a seasoned professional! 🚀'
 ];
+const gl3 = [
+  'Step into the future of Innovation in Civil Engineering! Witness an exclusive guest lecture by Mr. P. Udaya Kumar, Vice President - Projects at Bagmane Developers Pvt. Ltd., at MOMENTS25. With a distinguished career spanning over 25 years, Mr. Udaya Kumar has played a key role in executing large-scale commercial projects. His tenure as Construction Manager at Larsen & Toubro (L&T) further solidified his expertise in managing complex infrastructure developments. Recognized for his strategic leadership in high-value real estate and construction, he has been at the forefront of delivering state-of-the-art developments in India. Dont miss this opportunity to learn from an industry expert!'
+];
+const gl4 = [
+  'Innovators of the future!! Join us at MOMENTS 25 as we welcome Prof(Retd). Rajayogan Palanichamy to deliver a Guest Lecture. A distinguished civil engineer with over four decades of experience. His illustrious career includes serving as Immediate Past President of the American Society of Civil Engineers (ASCE) India Section. Prof(Retd). Palanichamy has held esteemed academic positions, including Professor of Civil Engineering at institutions in Ethiopia and Eritrea, and has been actively involved in promoting sustainable engineering practices . Dont miss this opportunity to gain valuable insights from our revered expert!!'
+];
+
 
 function Guestlecture() {
   return (
@@ -83,27 +92,42 @@ function Guestlecture() {
       >
         <GLCard
           title="Alumini-Talk (Case Study on Slope Protection at Iron Ore Mines)"
-          description="🌟 Mark your calendars!
-Join us on 25th March 2025 at 3 PM for an exclusive Alumni Talk with Sujeet Kumar, Chief - Projects and Construction at Tata Steel! 🏗️✨
-Dive into a real-world Case Study on Slope Protection at Iron Ore Mines 🏞️ and gain insights from an industry veteran!
-"
+//           description="🌟 Mark your calendars!
+// Join us on 25th March 2025 at 3 PM for an exclusive Alumni Talk with Sujeet Kumar, Chief - Projects and Construction at Tata Steel! 🏗️✨
+// Dive into a real-world Case Study on Slope Protection at Iron Ore Mines 🏞️ and gain insights from an industry veteran!
+// "
           rules={gl1}
           url={AlTalk}
-          registerLink="https://moments.nitt.edu/"
+          // registerLink="https://moments.nitt.edu/"
           tag="Guest Lecture"
         />
         <GLCard
           title="Alumini-Talk (Ground motion selection for response verification)"
-          description="🌟 Save the Date!
+//           description="🌟 Save the Date!
 
-Join us for an exclusive Alumni Talk with Rajprabhu Thangappa (Batch 2014) 🎓, Bridge Engineer at RK&K, Raleigh, USA 🌉✨
-
-"
+// Join us for an exclusive Alumni Talk with Rajprabhu Thangappa (Batch 2014) 🎓, Bridge Engineer at RK&K, Raleigh, USA 🌉✨"
           rules={gl2}
           url={AlTalk2}
-          registerLink="https://moments.nitt.edu/"
+          // registerLink="https://moments.nitt.edu/"
           tag="Guest Lecture"
         />
+        <GLCard
+          title="Guest Lecture By Mr. P Udaykumar"
+          // description="Step into the future of Innovation in Civil Engineering! Witness an exclusive guest lecture by Mr. P. Udaya Kumar, Vice President - Projects at Bagmane Developers Pvt. Ltd., at MOMENTS'25. With a distinguished career spanning over 25 years, Mr. Udaya Kumar has played a key role in executing large-scale commercial projects. His tenure as Construction Manager at Larsen & Toubro (L&T) further solidified his expertise in managing complex infrastructure developments. Recognized for his strategic leadership in high-value real estate and construction, he has been at the forefront of delivering state-of-the-art developments in India. Don’t miss this opportunity to learn from an industry expert!"
+          rules={gl3}
+          url={MrUdayaKumar}
+          // registerLink="https://moments.nitt.edu/"
+          tag="Guest Lecture"
+        />
+         <GLCard
+          title="Guest Lecture By Prof(retired). Rajayogan Palanichamy"
+          // description="Innovators of the future!! Join us at MOMENTS '25 as we welcome Prof(Retd). Rajayogan Palanichamy to deliver a Guest Lecture. A distinguished civil engineer with over four decades of experience. His illustrious career includes serving as Immediate Past President of the American Society of Civil Engineers (ASCE) India Section. Prof(Retd). Palanichamy has held esteemed academic positions, including Professor of Civil Engineering at institutions in Ethiopia and Eritrea, and has been actively involved in promoting sustainable engineering practices . Don't miss this opportunity to gain valuable insights from our revered expert!!"
+          rules={gl4}
+          url={Rajayogan}
+          // registerLink="https://moments.nitt.edu/"
+          tag="Guest Lecture"
+        />
+        
       </SimpleGrid>
       <Footer />
     </Box>
@@ -130,11 +154,11 @@ function GLCard({ title, description, rules, tag, url, registerLink }) {
       <Text as="h3" my={5} fontWeight="bold" fontSize="2xl">
         {title}
       </Text>
-      <Text>
+      {/* <Text>
         {description === ''
           ? 'Sit nulla est ex deserunt exercitation anim occaecat. Nostrud ullamco deserunt aute id consequat veniam duaisdhusia dusa duashu duasdhusahd saudusahud ausdhuisahdui ddcdsfd'
           : description}
-      </Text>
+      </Text> */}
       <Center>
         <Button
           mt={25}
@@ -183,7 +207,7 @@ function GLCard({ title, description, rules, tag, url, registerLink }) {
 
           {/* <ModalFooter> */}
           <Center>
-            <Button
+            {/* <Button
               colorScheme="blue"
               m={3}
               onClick={() => {
@@ -191,7 +215,7 @@ function GLCard({ title, description, rules, tag, url, registerLink }) {
               }}
             >
               Register Now
-            </Button>
+            </Button> */}
           </Center>
 
           {/* </ModalFooter> */}
